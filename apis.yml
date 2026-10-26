@@ -1,25 +1,77 @@
 aid: awst-io
+
 name: AWST
-description: 'AWST is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/656eaeba0be1d5284a76dd49/6644b61def38e39ae5800976_UI%20Images.png
+
+description: 'WorkRamen, created by the team at AWST, provides a productivity platform that combines intelligent scheduling, secure document sharing, trackable links, and instant e‑signatures. It serves small and medium‑sized businesses, startups, sales and marketing teams, professional services, educational institutions, and freelancers, enabling them to streamline workflows, accept payments, and accelerate deal closures. The service offers a 14‑day free trial with no credit card required.'
+
 url: https://raw.githubusercontent.com/api-evangelist/awst-io/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
-- Company
-apis: []
+- Productivity
+- Scheduling
+- Document Sharing
+- E‑Signatures
+- Payments
+- SMB Tools
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- 500-global
+
 common:
+- type: Plans
+  url: plans/awst-io-plans-pricing.yml
+- type: Hosts
+  url: hosts/awst-io-hosts.yml
+- type: Vendors
+  url: vendors/awst-io-vendors.yml
+- type: TermsOfService
+  url: https://www.workramen.com/terms-and-conditions
+- type: Login
+  url: https://app.workramen.com/auth/login
+- type: Blog
+  url: https://www.workramen.com/blog/unveiling-workramens-digital-signature-solution
+- type: DomainSecurity
+  url: security/awst-io-domain-security.yml
 - type: Website
   url: https://awst.io
+
+apis: []
+
+x-backed-by:
+- 500-global
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://awst.io
+    status: 200
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

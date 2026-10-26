@@ -1,0 +1,23 @@
+generated: '2026-10-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.workramen.com/newpricing
+sources:
+- https://www.workramen.com/newpricing
+name: AWST pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Individual
+  price_text: $12 USD /month
+  price: 12
+  description: Ideal for small teams or individuals, this plan offers essential features at a flexible price.
+- name: Unlimited
+  price_text: $299 USD /month
+  price: 299
+  description: Designed for growing teams that need unlimited access and seamless collaboration across departments.
+- name: Unlimited Plus
+  price_text: $499 USD /month
+  price: 499
+  description: Tailored for scaling businesses ready for rapid growth with expert-led strategies and guidance.
+docs: https://www.workramen.com/newpricing

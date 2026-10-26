@@ -1,0 +1,69 @@
+generated: '2026-10-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - identity
+  - marketing
+  - website
+hosts:
+- host: api.awst.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: awst.io
+  role: api
+  relation: own
+- host: api.workramen.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: workramen.com
+  role: api
+  relation: other-domain
+- host: app.workramen.com
+  found_by:
+  - pointer
+  types:
+  - Login
+  serves: []
+  registrable_domain: workramen.com
+  role: identity
+  relation: other-domain
+- host: awst.io
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: awst.io
+  role: website
+  relation: own
+- host: www.workramen.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Blog
+  serves: []
+  registrable_domain: workramen.com
+  role: marketing
+  relation: other-domain

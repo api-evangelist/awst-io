@@ -1,0 +1,11 @@
+generated: '2026-10-25'
+method: derived
+source: "https://www.awst.io"
+
+deployment:
+  mode: none
+  endpoint: "https://www.awst.io"
+  install: ""
+  package: ""
+  auth: none
+  verified: derived
