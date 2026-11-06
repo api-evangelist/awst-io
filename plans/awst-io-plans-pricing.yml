@@ -22,7 +22,7 @@ plans:
   description: Tailored for scaling businesses ready for rapid growth with expert-led strategies and guidance.
 docs: https://www.workramen.com/newpricing
 x-canonical:
-  generated: '2026-11-02'
+  generated: '2026-11-06'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - subscription
