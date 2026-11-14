@@ -14,7 +14,7 @@ accessModel:
   source:
   - plans
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://cdn.prod.website-files.com/656eaeba0be1d5284a76dd49/6644b61def38e39ae5800976_UI%20Images.png
 
@@ -73,6 +73,8 @@ common:
   url: security/awst-io-domain-security.yml
 - type: Website
   url: https://awst.io
+- type: UsageTerms
+  url: terms/awst-io-terms-of-service.yml
 
 apis: []
 
